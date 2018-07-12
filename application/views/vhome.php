@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="refresh" CONTENT="300">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Document</title>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -28,22 +28,19 @@
   color:white;
   }
   </style>
-<body style="font-family:'Open Sans';">
-<div class="container">
+<body style="font-family:'Roboto',sans-serif;overflow:hidden;"scroll="no">
  
-    
-    <div>
         <div>
-            <div style="overflow:hidden;">
-        <table style="height:100%;width:10%; position: absolute; top: 0; bottom: 0; left: 0;border:1px;" align='left'>
+            <div style="overflow:hidden;" class="container">
+        <table style="height:100%;width:10%; position: absolute; top: 0; bottom: 0; left: 0;" border="0">
      
-        <tr class="table-primary"  >
+        <tr class="table-primary"style="font-size:15px;" cellpadding="0">
             
-        <th cellpadding="2" scope="col" rowspan="2" ><br><br><br><br>Interval</th>
-            <th scope="col" colspan="5" >Hedcor</th>
+        <th  scope="col" rowspan="2" ><br><br><br><br>Interval</th>
+            <th cellpadding="0"scope="col" colspan="5" >Hedcor</th>
             <th scope="col" colspan="8" >APRI</th>
             <th scope="col" colspan="3">TLI</th>
-            <th scope="col" colspan="5" >TMO</th>
+            <th scope="col"  >TMO</th>
             <th scope="col" >CPPC</th>
             <th scope="col" >EAUC</th>
            
@@ -59,14 +56,10 @@
             <th scope="col"  >SAB</th>
             <th scope="col"  >BAK</th>
             <th scope="col" colspan="6" >Makban</th>
-            <th scope="col" colspan="2" >Tiwi</th>
+            <th scope="col" colspan="2" >Tiwi</th>  
             <th scope="col" >G01</th>
-            <th scope="col" >G02</th>
+            <th scope="col" >G02</th> 
             <th scope="col" >G03</th>
-            <th scope="col" >M3</th>
-            <th scope="col" >M4</th>
-            <th scope="col" >M5</th>
-            <th scope="col" >M6</th>
             <th scope="col" >PB</th>
             <th scope="col" >G01</th>
             <th scope="col" >G01</th> 
@@ -89,22 +82,18 @@
            <th><div id="tiwic_0"></div></th>
            <th><div id="tlig01_0"></div></th>
            <th><div id="tlig02_0"></div></th>
-           <th><div id="tlig03_0"></div></th>
-           <th><div id="tmom3_0"></div></th>
-           <th><div id="tmom4_0"></div></th>
-           <th><div id="tmom5_0"></div></th>
-           <th><div id="tmom6_0"></div></th>
+           <th><div id="tlig03_0"></div></th> 
            <th><div id="tmopb_0"></div></th>
            <th><div id="cppcg01_0"></div></th>
            <th><div id="eaucg01_0"></div></th> 
         </tr>
  
-        <tr class="table-primary" >
+        <tr class="table-info" >
             <th>DAP</th> 
             <th id="hedcor_time"colspan="5"></th>
             <th id="apri_time" colspan="8" ></th>
             <th id="tli_time" colspan="3"></th>
-            <th id="tmo_time" colspan="5" ></th>
+            <th id="tmo_time"   ></th>
             <th id="cppc_time" ></th>
             <th id="eauc_time" ></th>
         </tr>
@@ -132,10 +121,6 @@
             <td><div id="tlig01_1"></div></td>
             <td><div id="tlig02_1"></div></td>
             <td><div id="tlig03_1"></div></td>
-            <td><div id="tmom3_1"></div></td>
-            <td><div id="tmom4_1"></div></td>
-            <td><div id="tmom5_1"></div></td>
-            <td><div id="tmom6_1"></div></td>
             <td><div id="tmopb_1"></div></td>
             <td><div id="cppcg01_1"></div></td>
             <td><div id="eaucg01_1"></div></td>
@@ -144,7 +129,7 @@
            
         
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>2</strong></td>
             <td><div id="hedcor_2"></div></td>
@@ -162,11 +147,7 @@
             <td><div id="tiwic_2"></div></td>
             <td><div id="tlig01_2"></div></td>
             <td><div id="tlig02_2"></div></td>
-            <td><div id="tlig03_2"></div></td>
-            <td><div id="tmom3_2"></div></td>
-            <td><div id="tmom4_2"></div></td>
-            <td><div id="tmom5_2"></div></td>
-            <td><div id="tmom6_2"></div></td>
+            <td><div id="tlig03_2"></div></td> 
             <td><div id="tmopb_2"></div></td>
             <td><div id="cppcg01_2"></div></td>
             <td><div id="eaucg01_2"></div></td>
@@ -192,18 +173,14 @@
             <td><div id="tiwic_3"></div></td>
             <td><div id="tlig01_3"></div></td>
             <td><div id="tlig02_3"></div></td>
-            <td><div id="tlig03_3"></div></td>
-            <td><div id="tmom3_3"></div></td>
-            <td><div id="tmom4_3"></div></td>
-            <td><div id="tmom5_3"></div></td>
-            <td><div id="tmom6_3"></div></td>
+            <td><div id="tlig03_3"></div></td> 
             <td><div id="tmopb_3"></div></td>
             <td><div id="cppcg01_3"></div></td>
             <td><div id="eaucg01_3"></div></td>
            
             
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
            
            <td><strong>4</strong></td>
@@ -222,11 +199,7 @@
             <td><div id="tiwic_4"></div></td>
             <td><div id="tlig01_4"></div></td>
             <td><div id="tlig02_4"></div></td>
-            <td><div id="tlig03_4"></div></td>
-            <td><div id="tmom3_4"></div></td>
-            <td><div id="tmom4_4"></div></td>
-            <td><div id="tmom5_4"></div></td>
-            <td><div id="tmom6_4"></div></td>
+            <td><div id="tlig03_4"></div></td> 
             <td><div id="tmopb_4"></div></td>
             <td><div id="cppcg01_4"></div></td>
             <td><div id="eaucg01_4"></div></td>
@@ -249,16 +222,12 @@
             <td><div id="tiwic_5"></div></td>
             <td><div id="tlig01_5"></div></td>
             <td><div id="tlig02_5"></div></td>
-            <td><div id="tlig03_5"></div></td>
-            <td><div id="tmom3_5"></div></td>
-            <td><div id="tmom4_5"></div></td>
-            <td><div id="tmom5_5"></div></td>
-            <td><div id="tmom6_5"></div></td>
+            <td><div id="tlig03_5"></div></td> 
             <td><div id="tmopb_5"></div></td>
             <td><div id="cppcg01_5"></div></td>
             <td><div id="eaucg01_5"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
            <td><strong>6</strong></td>
             <td><div id="hedcor_6"></div></td>
@@ -276,11 +245,7 @@
             <td><div id="tiwic_6"></div></td>
             <td><div id="tlig01_6"></div></td>
             <td><div id="tlig02_6"></div></td>
-            <td><div id="tlig03_6"></div></td>
-            <td><div id="tmom3_6"></div></td>
-            <td><div id="tmom4_6"></div></td>
-            <td><div id="tmom5_6"></div></td>
-            <td><div id="tmom6_6"></div></td>
+            <td><div id="tlig03_6"></div></td> 
             <td><div id="tmopb_6"></div></td>
             <td><div id="cppcg01_6"></div></td>
             <td><div id="eaucg01_6"></div></td>
@@ -303,16 +268,12 @@
             <td><div id="tiwic_7"></div></td>
             <td><div id="tlig01_7"></div></td>
             <td><div id="tlig02_7"></div></td>
-            <td><div id="tlig03_7"></div></td>
-            <td><div id="tmom3_7"></div></td>
-            <td><div id="tmom4_7"></div></td>
-            <td><div id="tmom5_7"></div></td>
-            <td><div id="tmom6_7"></div></td>
+            <td><div id="tlig03_7"></div></td> 
             <td><div id="tmopb_7"></div></td>
             <td><div id="cppcg01_7"></div></td>
             <td><div id="eaucg01_7"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>8</strong></td>
             <td><div id="hedcor_8"></div></td>
@@ -330,11 +291,7 @@
             <td><div id="tiwic_8"></div></td>
             <td><div id="tlig01_8"></div></td>
             <td><div id="tlig02_8"></div></td>
-            <td><div id="tlig03_8"></div></td>
-            <td><div id="tmom3_8"></div></td>
-            <td><div id="tmom4_8"></div></td>
-            <td><div id="tmom5_8"></div></td>
-            <td><div id="tmom6_8"></div></td>
+            <td><div id="tlig03_8"></div></td> 
             <td><div id="tmopb_8"></div></td>
             <td><div id="cppcg01_8"></div></td>
             <td><div id="eaucg01_8"></div></td>
@@ -357,16 +314,12 @@
             <td><div id="tiwic_9"></div></td>
             <td><div id="tlig01_9"></div></td>
             <td><div id="tlig02_9"></div></td>
-            <td><div id="tlig03_9"></div></td>
-            <td><div id="tmom3_9"></div></td>
-            <td><div id="tmom4_9"></div></td>
-            <td><div id="tmom5_9"></div></td>
-            <td><div id="tmom6_9"></div></td>
+            <td><div id="tlig03_9"></div></td> 
             <td><div id="tmopb_9"></div></td>
             <td><div id="cppcg01_9"></div></td>
             <td><div id="eaucg01_9"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>10</strong></td>
             <td><div id="hedcor_10"></div></td>
@@ -384,11 +337,7 @@
             <td><div id="tiwic_10"></div></td>
             <td><div id="tlig01_10"></div></td>
             <td><div id="tlig02_10"></div></td>
-            <td><div id="tlig03_10"></div></td>
-            <td><div id="tmom3_10"></div></td>
-            <td><div id="tmom4_10"></div></td>
-            <td><div id="tmom5_10"></div></td>
-            <td><div id="tmom6_10"></div></td>
+            <td><div id="tlig03_10"></div></td> 
             <td><div id="tmopb_10"></div></td>
             <td><div id="cppcg01_10"></div></td>
             <td><div id="eaucg01_10"></div></td>
@@ -411,16 +360,12 @@
             <td><div id="tiwic_11"></div></td>
             <td><div id="tlig01_11"></div></td>
             <td><div id="tlig02_11"></div></td>
-            <td><div id="tlig03_11"></div></td>
-            <td><div id="tmom3_11"></div></td>
-            <td><div id="tmom4_11"></div></td>
-            <td><div id="tmom5_11"></div></td>
-            <td><div id="tmom6_11"></div></td>
+            <td><div id="tlig03_11"></div></td> 
             <td><div id="tmopb_11"></div></td>
             <td><div id="cppcg01_11"></div></td>
             <td><div id="eaucg01_11"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
            <td><strong>12</strong></td>
             <td><div id="hedcor_12"></div></td>
@@ -438,11 +383,7 @@
             <td><div id="tiwic_12"></div></td>
             <td><div id="tlig01_12"></div></td>
             <td><div id="tlig02_12"></div></td>
-            <td><div id="tlig03_12"></div></td>
-            <td><div id="tmom3_12"></div></td>
-            <td><div id="tmom4_12"></div></td>
-            <td><div id="tmom5_12"></div></td>
-            <td><div id="tmom6_12"></div></td>
+            <td><div id="tlig03_12"></div></td> 
             <td><div id="tmopb_12"></div></td>
             <td><div id="cppcg01_12"></div></td>
             <td><div id="eaucg01_12"></div></td>
@@ -465,16 +406,12 @@
             <td><div id="tiwic_13"></div></td>
             <td><div id="tlig01_13"></div></td>
             <td><div id="tlig02_13"></div></td>
-            <td><div id="tlig03_13"></div></td>
-            <td><div id="tmom3_13"></div></td>
-            <td><div id="tmom4_13"></div></td>
-            <td><div id="tmom5_13"></div></td>
-            <td><div id="tmom6_13"></div></td>
+            <td><div id="tlig03_13"></div></td> 
             <td><div id="tmopb_13"></div></td>
             <td><div id="cppcg01_13"></div></td>
             <td><div id="eaucg01_13"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>14</strong></td>
             <td><div id="hedcor_14"></div></td>
@@ -492,11 +429,7 @@
             <td><div id="tiwic_14"></div></td>
             <td><div id="tlig01_14"></div></td>
             <td><div id="tlig02_14"></div></td>
-            <td><div id="tlig03_14"></div></td>
-            <td><div id="tmom3_14"></div></td>
-            <td><div id="tmom4_14"></div></td>
-            <td><div id="tmom5_14"></div></td>
-            <td><div id="tmom6_14"></div></td>
+            <td><div id="tlig03_14"></div></td> 
             <td><div id="tmopb_14"></div></td>
             <td><div id="cppcg01_14"></div></td>
             <td><div id="eaucg01_14"></div></td>
@@ -518,16 +451,12 @@
             <td><div id="tiwic_15"></div></td>
             <td><div id="tlig01_15"></div></td>
             <td><div id="tlig02_15"></div></td>
-            <td><div id="tlig03_15"></div></td>
-            <td><div id="tmom3_15"></div></td>
-            <td><div id="tmom4_15"></div></td>
-            <td><div id="tmom5_15"></div></td>
-            <td><div id="tmom6_15"></div></td>
+            <td><div id="tlig03_15"></div></td> 
             <td><div id="tmopb_15"></div></td>
             <td><div id="cppcg01_15"></div></td>
             <td><div id="eaucg01_15"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
          <td><strong>16</strong></td>
             <td><div id="hedcor_16"></div></td>
@@ -545,11 +474,7 @@
             <td><div id="tiwic_16"></div></td>
             <td><div id="tlig01_16"></div></td>
             <td><div id="tlig02_16"></div></td>
-            <td><div id="tlig03_16"></div></td>
-            <td><div id="tmom3_16"></div></td>
-            <td><div id="tmom4_16"></div></td>
-            <td><div id="tmom5_16"></div></td>
-            <td><div id="tmom6_16"></div></td>
+            <td><div id="tlig03_16"></div></td> 
             <td><div id="tmopb_16"></div></td>
             <td><div id="cppcg01_16"></div></td>
             <td><div id="eaucg01_16"></div></td>
@@ -573,16 +498,12 @@
             <td><div id="tiwic_17"></div></td>
             <td><div id="tlig01_17"></div></td>
             <td><div id="tlig02_17"></div></td>
-            <td><div id="tlig03_17"></div></td>
-            <td><div id="tmom3_17"></div></td>
-            <td><div id="tmom4_17"></div></td>
-            <td><div id="tmom5_17"></div></td>
-            <td><div id="tmom6_17"></div></td>
+            <td><div id="tlig03_17"></div></td> 
             <td><div id="tmopb_17"></div></td>
             <td><div id="cppcg01_17"></div></td>
             <td><div id="eaucg01_17"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>18</strong></td>
             <td><div id="hedcor_18"></div></td>
@@ -600,11 +521,7 @@
             <td><div id="tiwic_18"></div></td>
             <td><div id="tlig01_18"></div></td>
             <td><div id="tlig02_18"></div></td>
-            <td><div id="tlig03_18"></div></td>
-            <td><div id="tmom3_18"></div></td>
-            <td><div id="tmom4_18"></div></td>
-            <td><div id="tmom5_18"></div></td>
-            <td><div id="tmom6_18"></div></td>
+            <td><div id="tlig03_18"></div></td> 
             <td><div id="tmopb_18"></div></td>
             <td><div id="cppcg01_18"></div></td>
             <td><div id="eaucg01_18"></div></td>
@@ -627,16 +544,12 @@
             <td><div id="tiwic_19"></div></td>
             <td><div id="tlig01_19"></div></td>
             <td><div id="tlig02_19"></div></td>
-            <td><div id="tlig03_19"></div></td>
-            <td><div id="tmom3_19"></div></td>
-            <td><div id="tmom4_19"></div></td>
-            <td><div id="tmom5_19"></div></td>
-            <td><div id="tmom6_19"></div></td>
+            <td><div id="tlig03_19"></div></td> 
             <td><div id="tmopb_19"></div></td>
             <td><div id="cppcg01_19"></div></td>
             <td><div id="eaucg01_19"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
            <td><strong>20</strong></td>
             <td><div id="hedcor_20"></div></td>
@@ -654,11 +567,7 @@
             <td><div id="tiwic_20"></div></td>
             <td><div id="tlig01_20"></div></td>
             <td><div id="tlig02_20"></div></td>
-            <td><div id="tlig03_20"></div></td>
-            <td><div id="tmom3_20"></div></td>
-            <td><div id="tmom4_20"></div></td>
-            <td><div id="tmom5_20"></div></td>
-            <td><div id="tmom6_20"></div></td>
+            <td><div id="tlig03_20"></div></td> 
             <td><div id="tmopb_20"></div></td>
             <td><div id="cppcg01_20"></div></td>
             <td><div id="eaucg01_20"></div></td>
@@ -681,15 +590,11 @@
             <td><div id="tlig01_21"></div></td>
             <td><div id="tlig02_21"></div></td>
             <td><div id="tlig03_21"></div></td>
-            <td><div id="tmom3_21"></div></td>
-            <td><div id="tmom4_21"></div></td>
-            <td><div id="tmom5_21"></div></td>
-            <td><div id="tmom6_21"></div></td>
             <td><div id="tmopb_21"></div></td>
             <td><div id="cppcg01_21"></div></td>
             <td><div id="eaucg01_21"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>22</strong></td>
             <td><div id="hedcor_22"></div></td>
@@ -707,11 +612,7 @@
             <td><div id="tiwic_22"></div></td>
             <td><div id="tlig01_22"></div></td>
             <td><div id="tlig02_22"></div></td>
-            <td><div id="tlig03_22"></div></td>
-            <td><div id="tmom3_22"></div></td>
-            <td><div id="tmom4_22"></div></td>
-            <td><div id="tmom5_22"></div></td>
-            <td><div id="tmom6_22"></div></td>
+            <td><div id="tlig03_22"></div></td> 
             <td><div id="tmopb_22"></div></td>
             <td><div id="cppcg01_22"></div></td>
             <td><div id="eaucg01_22"></div></td>
@@ -734,16 +635,12 @@
             <td><div id="tiwic_23"></div></td>
             <td><div id="tlig01_23"></div></td>
             <td><div id="tlig02_23"></div></td>
-            <td><div id="tlig03_23"></div></td>
-            <td><div id="tmom3_23"></div></td>
-            <td><div id="tmom4_23"></div></td>
-            <td><div id="tmom5_23"></div></td>
-            <td><div id="tmom6_23"></div></td>
+            <td><div id="tlig03_23"></div></td> 
             <td><div id="tmopb_23"></div></td>
             <td><div id="cppcg01_23"></div></td>
             <td><div id="eaucg01_23"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-secondary">
 
             <td><strong>24</strong></td>
             <td><div id="hedcor_24"></div></td>
@@ -762,10 +659,6 @@
             <td><div id="tlig01_24"></div></td>
             <td><div id="tlig02_24"></div></td>
             <td><div id="tlig03_24"></div></td>
-            <td><div id="tmom3_24"></div></td>
-            <td><div id="tmom4_24"></div></td>
-            <td><div id="tmom5_24"></div></td>
-            <td><div id="tmom6_24"></div></td>
             <td><div id="tmopb_24"></div></td>
             <td><div id="cppcg01_24"></div></td>
             <td><div id="eaucg01_24"></div></td>
@@ -774,7 +667,7 @@
 </div>
  
 </table>
-<table  cellpadding="10" style="height:90%;width:27%; position: absolute; top:0; bottom: 0; left: 985;border:1px solid;overflow:hidden; vertical-align:inherit;  "align="left">
+<table  cellpadding="10" style="height:90%;width:32%; position: absolute; top:0; bottom: 0; left: 900;border:1px solid;overflow:hidden; vertical-align:inherit;  "align="left">
      <tr>
         <th scope="col" colspan="10"><div style='font-size:20px;'>System Messages </div>  </th>
      </tr>     
@@ -913,7 +806,7 @@ function get_msg(){
                                 $("#hedcor_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#hedcor_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -922,7 +815,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "HEDCORHE" && arr['dap_resoid']=="1NMHC_G01" ) { 
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null && sr!=null){
                                 $("#hedcor2_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -931,7 +824,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "HEDCOR" && arr['dap_resoid']=="1NMHC_G03" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#hedcor3_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -940,7 +833,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "HSABI" && arr['dap_resoid']=="1SABANG_G01" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#hedcor4_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -949,7 +842,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "HEDCORBA" && arr['dap_resoid']=="1HEDCOR_G01" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#hedcor5_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -962,7 +855,7 @@ function get_msg(){
                                 $("#apri_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbna_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -972,7 +865,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3MKBN_B" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbnb_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -981,7 +874,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3MKBN_C" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbnc_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -990,7 +883,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3MKBN_D" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbnd_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -999,7 +892,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3MKBN_E" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbne_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1008,7 +901,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3ORMAT_G01" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#mkbno_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1017,7 +910,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3TIWI_A" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tiwia_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1026,7 +919,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3TIWI_C" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tiwic_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1036,7 +929,7 @@ function get_msg(){
                                 $("#tli_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tlig01_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1045,7 +938,7 @@ function get_msg(){
                                 if(arr['dap_partid'] == "TLI" && arr['dap_resoid']=="3PAGBIL_G02" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tlig02_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1054,54 +947,54 @@ function get_msg(){
                                 if(arr['dap_partid'] == "PEC" && arr['dap_resoid']=="3PAGBIL_G03" ) {
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tlig03_"+i).html(trueRound(sr,2));
                             }
                                 
                                 }
                                 }
-                                if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G01" ) {
-                                for(var i = 1; i <= 24; ++i) {      
-                                sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
-                                $("#tmom3_"+i).html(trueRound(sr,2));
-                            }
+                            //     if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G01" ) {
+                            //     for(var i = 1; i <= 24; ++i) {      
+                            //     sr= arr['dap_sr_' + pad(i, 2)];      
+                            //         if(sr>=0&&sr!=null){
+                            //     $("#tmom3_"+i).html(trueRound(sr,2));
+                            // }
                                 
-                                }
-                                }
-                                if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G02" ) {
-                                for(var i = 1; i <= 24; ++i) {      
-                                sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
-                                $("#tmom4_"+i).html(trueRound(sr,2));
-                            }
+                            //     }
+                            //     }
+                            //     if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G02" ) {
+                            //     for(var i = 1; i <= 24; ++i) {      
+                            //     sr= arr['dap_sr_' + pad(i, 2)];      
+                            //         if(sr>=0&&sr!=null){
+                            //     $("#tmom4_"+i).html(trueRound(sr,2));
+                            // }
                                 
-                                }
-                                }
+                            //     }
+                            //     }
                                 if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_PB" ) {
                                 $("#tmo_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#tmopb_"+i).html(trueRound(sr,2));
                             }
                                 
                                 }
                                 }
-                                if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G04" ) {
-                                for(var i = 1; i <= 24; ++i) {      
-                                sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
-                                $("#tmom6_"+i).html(trueRound(sr,2));
-                            }
+                            //     if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_G04" ) {
+                            //     for(var i = 1; i <= 24; ++i) {      
+                            //     sr= arr['dap_sr_' + pad(i, 2)];      
+                            //         if(sr>=0&&sr!=null){
+                            //     $("#tmom6_"+i).html(trueRound(sr,2));
+                            // }
                                 
-                                }
-                                }
+                            //     }
+                            //     }
                                 if(arr['dap_partid'] == "EAUC") {
                                 $("#eauc_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#eaucg01_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1111,7 +1004,7 @@ function get_msg(){
                                 $("#cppc_time").html(arr['dap_sr_ddown'].substr(-9));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
-                                    if( sr>=0){
+                                    if(sr>=0&&sr!=null){
                                 $("#cppcg01_"+i).html(trueRound(sr,2));
                             }
                                 
@@ -1127,7 +1020,7 @@ function get_msg(){
                              }
                                           rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                              if(rtd!=rtdm&&i>1&&rtd!=null){
-                                                    document.getElementById('hedcor_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                                    document.getElementById('hedcor_' + i).parentNode.style.backgroundColor = '#F44335';
                                                     document.getElementById('hedcor_' + i).style.color = '#FFFFFF';
                                                     $("#hedcor_0").html( "<B style='font-size:15px;color:WHITE;' class='blink' >"+trueRound(rtd,2));
 
@@ -1373,38 +1266,38 @@ function get_msg(){
                                         }
                                     }
                                     }
-                                    if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G01" ) {
-                                    for(var i = 1; i <= 24; ++i) {      
-                                        rtd= arr['rtd_mw_' + pad(i, 2)];      
-                                        if( rtd>=0 && rtd !=null){ 
-                                        $("#tmom3_"+i).html("<b>"+ trueRound(rtd,2));
-                                        $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
-                                    }
-                                    rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
-                                        if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tmom3_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tmom3_' + i).style.color = '#FFFFFF';
-                                            $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    // if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G01" ) {
+                                    // for(var i = 1; i <= 24; ++i) {      
+                                    //     rtd= arr['rtd_mw_' + pad(i, 2)];      
+                                    //     if( rtd>=0 && rtd !=null){ 
+                                    //     $("#tmom3_"+i).html("<b>"+ trueRound(rtd,2));
+                                    //     $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    // }
+                                    // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
+                                    //     if(rtd!=rtdm&&i>1&&rtd!=null){
+                                    //         document.getElementById('tmom3_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom3_' + i).style.color = '#FFFFFF';
+                                    //         $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
-                                        }
-                                    }
-                                    }
-                                    if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G02" ) {
-                                    for(var i = 1; i <= 24; ++i) {      
-                                        rtd= arr['rtd_mw_' + pad(i, 2)];      
-                                        if( rtd>=0 && rtd !=null){ 
-                                        $("#tmom4_"+i).html("<b>"+ trueRound(rtd,2));
-                                        $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
-                                    }
-                                    rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
-                                        if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tmom4_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tmom4_' + i).style.color = '#FFFFFF';
-                                            $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    //     }
+                                    // }
+                                    // }
+                                    // if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G02" ) {
+                                    // for(var i = 1; i <= 24; ++i) {      
+                                    //     rtd= arr['rtd_mw_' + pad(i, 2)];      
+                                    //     if( rtd>=0 && rtd !=null){ 
+                                    //     $("#tmom4_"+i).html("<b>"+ trueRound(rtd,2));
+                                    //     $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    // }
+                                    // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
+                                    //     if(rtd!=rtdm&&i>1&&rtd!=null){
+                                    //         document.getElementById('tmom4_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom4_' + i).style.color = '#FFFFFF';
+                                    //         $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
-                                        }
-                                    }
-                                    }
+                                    //     }
+                                    // }
+                                    // }
                                     if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_PB" ) {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
@@ -1421,22 +1314,22 @@ function get_msg(){
                                         }
                                     }
                                     }
-                                    if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G04" ) {
-                                    for(var i = 1; i <= 24; ++i) {      
-                                        rtd= arr['rtd_mw_' + pad(i, 2)];      
-                                        if( rtd>=0 && rtd !=null){ 
-                                        $("#tmom6_"+i).html("<b>"+ trueRound(rtd,2));
-                                        $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
-                                    }
-                                    rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
-                                        if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tmom6_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tmom6_' + i).style.color = '#FFFFFF';
-                                            $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    // if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G04" ) {
+                                    // for(var i = 1; i <= 24; ++i) {      
+                                    //     rtd= arr['rtd_mw_' + pad(i, 2)];      
+                                    //     if( rtd>=0 && rtd !=null){ 
+                                    //     $("#tmom6_"+i).html("<b>"+ trueRound(rtd,2));
+                                    //     $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    // }
+                                    // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
+                                    //     if(rtd!=rtdm&&i>1&&rtd!=null){
+                                    //         document.getElementById('tmom6_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom6_' + i).style.color = '#FFFFFF';
+                                    //         $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
-                                        }
-                                    }
-                                    }
+                                    //     }
+                                    // }
+                                    // }
                                     if(arr['amp_partid'] == "EAUC" && arr['amp_resoid']=="5EAUC_G01") {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
@@ -1482,8 +1375,7 @@ function get_msg(){
          
 </script>   
 
-</div>
-</div>
+ 
 </div>
  
 </body>
