@@ -31,42 +31,42 @@
 <body style="font-family:'Roboto',sans-serif;overflow:hidden;"scroll="no">
  
         <div>
-            <div style="overflow:hidden;" class="container">
-        <table style="height:100%;width:10%; position: absolute; top: 0; bottom: 0; left: 0;" border="0">
+            <div class="container">
+        <table style="height:100%;width:10%; position: absolute; top: 0; bottom: 0; left: 0;">
      
-        <tr class="table-primary"style="font-size:15px;" cellpadding="0">
+        <tr class="table-primary"style="font-size:14px;;border-left:1px solid black;" cellpadding="0" >
             
-        <th  scope="col" rowspan="2" ><br><br><br><br>Interval</th>
+            <th id="interval" scope="col" rowspan="2" >Interval</th>
             <th cellpadding="0"scope="col" colspan="5" >Hedcor</th>
-            <th scope="col" colspan="8" >APRI</th>
-            <th scope="col" colspan="3">TLI</th>
+            <th scope="col" colspan="8" id="apri_data">APRI</th>
+            <th scope="col" colspan="3" id="tli_data">TLI</th>
             <th scope="col"  >TMO</th>
             <th scope="col" >CPPC</th>
             <th scope="col" >EAUC</th>
            
         </tr>
       
+        
   
- 
-        <tr class="table-primary">
+        <tr class="table-primary" >
              
-            <th scope="col"  >SAL</th>
-            <th scope="col"  >IR1</th>
-            <th scope="col"  >IR3</th>
-            <th scope="col"  >SAB</th>
-            <th scope="col"  >BAK</th>
-            <th scope="col" colspan="6" >Makban</th>
-            <th scope="col" colspan="2" >Tiwi</th>  
-            <th scope="col" >G01</th>
-            <th scope="col" >G02</th> 
-            <th scope="col" >G03</th>
-            <th scope="col" >PB</th>
-            <th scope="col" >G01</th>
-            <th scope="col" >G01</th> 
+            <th class="lll" scope="col"  >SAL</th>
+            <th class="lll" scope="col"  >IR1</th>
+            <th class="lll" scope="col"  >IR3</th>
+            <th class="lll" scope="col"  >SAB</th>
+            <th class="lll" scope="col"  >BAK</th>
+            <th class="lll" scope="col" colspan="6" >Makban</th>
+            <th class="lll" scope="col" colspan="2" >Tiwi</th>  
+            <th class="lll" scope="col" >G01</th>
+            <th class="lll" scope="col" >G02</th> 
+            <th class="lll" scope="col" >G03</th>
+            <th class="lll" scope="col" >PB</th>
+            <th class="lll" scope="col" >G01</th>
+            <th class="lll" scope="col" >G01</th> 
 
         </tr>
-        <tr class="table table-info"> 
-        <th ><strong> RTD</strong></th>
+        <tr class="table-light" cellspacing="5"> 
+        <th style="font-size:25px;"><strong> RTD</strong>&nbsp</th>
            <th><div id="hedcor_0"></div></th>
            <th><div id="hedcor2_0"></div></th>
            <th><div id="hedcor3_0"></div></th>
@@ -88,24 +88,24 @@
            <th><div id="eaucg01_0"></div></th> 
         </tr>
  
-        <tr class="table-info" >
-            <th>DAP</th> 
-            <th id="hedcor_time"colspan="5"></th>
-            <th id="apri_time" colspan="8" ></th>
-            <th id="tli_time" colspan="3"></th>
-            <th id="tmo_time"   ></th>
-            <th id="cppc_time" ></th>
-            <th id="eauc_time" ></th>
+        <tr class="table-primary" >
+            <th style="font-size:12px;">DAP</th> 
+            <th style="height:1%;"id="hedcor_time"colspan="5">00:00</th>
+            <th style="height:1%;"id="apri_time" colspan="8" >00:00</th>
+            <th style="height:1%;"id="tli_time" colspan="3">00:00</th>
+            <th style="height:1%;"id="tmo_time"   >00:00</th>
+            <th style="height:1%;"id="cppc_time" >00:00</th>
+            <th style="height:1%;"id="eauc_time" >00:00</th>
         </tr>
    
        
        
            
 
-        <tr class="table-active">
+        <tr class="table-light">
 
             <td><strong>1</strong></td>
-            <td><div id="hedcor_1"></div></td>
+            <td id="dap"><div id="hedcor_1"></div></td>
             <td><div id="hedcor2_1"></div></td>
             <td><div id="hedcor3_1"></div></td>
             <td><div id="hedcor4_1"></div></td>
@@ -129,7 +129,7 @@
            
         
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>2</strong></td>
             <td><div id="hedcor_2"></div></td>
@@ -155,7 +155,7 @@
            
            
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
             <td><strong>3</strong></td>
             <td><div id="hedcor_3"></div></td>
@@ -180,7 +180,7 @@
            
             
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
            
            <td><strong>4</strong></td>
@@ -204,7 +204,7 @@
             <td><div id="cppcg01_4"></div></td>
             <td><div id="eaucg01_4"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
             <td><strong>5</strong></td>
             <td><div id="hedcor_5"></div></td>
@@ -227,7 +227,7 @@
             <td><div id="cppcg01_5"></div></td>
             <td><div id="eaucg01_5"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
            <td><strong>6</strong></td>
             <td><div id="hedcor_6"></div></td>
@@ -250,7 +250,7 @@
             <td><div id="cppcg01_6"></div></td>
             <td><div id="eaucg01_6"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
             <td><strong>7</strong></td>
             <td><div id="hedcor_7"></div></td>
@@ -273,7 +273,7 @@
             <td><div id="cppcg01_7"></div></td>
             <td><div id="eaucg01_7"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>8</strong></td>
             <td><div id="hedcor_8"></div></td>
@@ -296,7 +296,7 @@
             <td><div id="cppcg01_8"></div></td>
             <td><div id="eaucg01_8"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
             <td><strong>9</strong></td>
             <td><div id="hedcor_9"></div></td>
@@ -319,7 +319,7 @@
             <td><div id="cppcg01_9"></div></td>
             <td><div id="eaucg01_9"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>10</strong></td>
             <td><div id="hedcor_10"></div></td>
@@ -342,7 +342,7 @@
             <td><div id="cppcg01_10"></div></td>
             <td><div id="eaucg01_10"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
             <td><strong>11</strong></td>
             <td><div id="hedcor_11"></div></td>
@@ -365,7 +365,7 @@
             <td><div id="cppcg01_11"></div></td>
             <td><div id="eaucg01_11"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
            <td><strong>12</strong></td>
             <td><div id="hedcor_12"></div></td>
@@ -388,7 +388,7 @@
             <td><div id="cppcg01_12"></div></td>
             <td><div id="eaucg01_12"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
            <td><strong>13</strong></td>
             <td><div id="hedcor_13"></div></td>
@@ -411,7 +411,7 @@
             <td><div id="cppcg01_13"></div></td>
             <td><div id="eaucg01_13"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>14</strong></td>
             <td><div id="hedcor_14"></div></td>
@@ -433,7 +433,7 @@
             <td><div id="tmopb_14"></div></td>
             <td><div id="cppcg01_14"></div></td>
             <td><div id="eaucg01_14"></div></td>
-        </tr>        <tr class="table-active">
+        </tr>        <tr class="table-light">
 
             <td><strong>15</strong></td>
             <td><div id="hedcor_15"></div></td>
@@ -456,7 +456,7 @@
             <td><div id="cppcg01_15"></div></td>
             <td><div id="eaucg01_15"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
          <td><strong>16</strong></td>
             <td><div id="hedcor_16"></div></td>
@@ -480,7 +480,7 @@
             <td><div id="eaucg01_16"></div></td>
         </tr>
                
-                <tr class="table-active">
+                <tr class="table-light">
 
            <td><strong>17</strong></td>
             <td><div id="hedcor_17"></div></td>
@@ -503,7 +503,7 @@
             <td><div id="cppcg01_17"></div></td>
             <td><div id="eaucg01_17"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>18</strong></td>
             <td><div id="hedcor_18"></div></td>
@@ -526,7 +526,7 @@
             <td><div id="cppcg01_18"></div></td>
             <td><div id="eaucg01_18"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
            <td><strong>19</strong></td>
             <td><div id="hedcor_19"></div></td>
@@ -549,7 +549,7 @@
             <td><div id="cppcg01_19"></div></td>
             <td><div id="eaucg01_19"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
            <td><strong>20</strong></td>
             <td><div id="hedcor_20"></div></td>
@@ -571,7 +571,7 @@
             <td><div id="tmopb_20"></div></td>
             <td><div id="cppcg01_20"></div></td>
             <td><div id="eaucg01_20"></div></td>
-        </tr>        <tr class="table-active">
+        </tr>        <tr class="table-light">
 
             <td><strong>21</strong></td>
             <td><div id="hedcor_21"></div></td>
@@ -594,7 +594,7 @@
             <td><div id="cppcg01_21"></div></td>
             <td><div id="eaucg01_21"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>22</strong></td>
             <td><div id="hedcor_22"></div></td>
@@ -617,7 +617,7 @@
             <td><div id="cppcg01_22"></div></td>
             <td><div id="eaucg01_22"></div></td>
         </tr>
-                <tr class="table-active">
+                <tr class="table-light">
 
            <td><strong>23</strong></td>
             <td><div id="hedcor_23"></div></td>
@@ -640,7 +640,7 @@
             <td><div id="cppcg01_23"></div></td>
             <td><div id="eaucg01_23"></div></td>
         </tr>
-                <tr class="table-secondary">
+                <tr align="center" valign="middle" bgcolor="#E6F1FF">
 
             <td><strong>24</strong></td>
             <td><div id="hedcor_24"></div></td>
@@ -667,7 +667,7 @@
 </div>
  
 </table>
-<table  cellpadding="10" style="height:90%;width:32%; position: absolute; top:0; bottom: 0; left: 900;border:1px solid;overflow:hidden; vertical-align:inherit;  "align="left">
+<table  cellpadding="10" style="height:90%;width:29%; position: absolute; top:0; bottom: 0; left: 860;border:0px solid;overflow:hidden; vertical-align:inherit;  "align="left">
      <tr>
         <th scope="col" colspan="10"><div style='font-size:20px;'>System Messages </div>  </th>
      </tr>     
@@ -701,30 +701,22 @@ $(document).ready(function() {
 );
  
 function get_msg(){
-    $("#table_body").html("Retrieving messages..");
-	 $.ajax({
-      url: "http://139.162.47.11/mrms/index.php/DAP/get_SYSMSGS_data",
-      type: "post",
-	  dataType: "json",
-      data: {},
-      success: function(d){
-			
-		 
-			var msgs = "";
-			if(d == null)
+    jQuery.getJSON('https://cors.io/?http://139.162.47.11/mrms/index.php/DAP/get_SYSMSGS_data', function(data) {
+                var table_body = '';
+                $.each(data['msgs'], function(key, value) {
+                    console.log(jQuery.isPlainObject(value));
+                    if(jQuery.isPlainObject(value)) {
+                        for(key in data['msgs'])
 			{
-				return;
+                if(data['msgs'][key]['msg_details']!=""){
+				table_body = table_body + data['msgs'][key]['msg_datetime'] + ": " + data['msgs'][key]['msg_details'] + "<BR /><BR />";
 			}
-			for(key in d['msgs'])
-			{
-				msgs = msgs + d['msgs'][key]['msg_datetime'] + ": " + d['msgs'][key]['msg_details'] + "<BR /><BR />";
-			} 
-            $("#table_body").html(msgs); 
-      },
-      error:function(){ 
-          get_msg();
-      }   
-    }); 
+            }
+
+                    }
+                });
+                $("#table_body").html(table_body);
+            });
 
 
 }
@@ -769,6 +761,7 @@ function get_msg(){
                   
          //get dap,amp data
                  function get_data(){
+                     var apri_mkbn0,apri_mkbn1,apri_mkbn2,apri_mkbn3,apri_mkbn4,apri_mkbn5,apri_tiwia,apri_tiwic,apri_total,tli_g01,tli_g02,tli_g03,tli_total=0;
                     if(downloading == 1){
                             return;
                         }
@@ -777,9 +770,10 @@ function get_msg(){
                         var dnow = new Date();
                         var curr_rtd_hr = dnow.getHours()+1;
                         console.log(curr_rtd_hr);
+                        $("#interval").html("Interval<br>"+curr_rtd_hr+":00H")
                          
                     $.ajax({
-                    url: "http://127.0.0.1/web/index.php/controller/get_all_data",
+                    url: "http://54.191.55.210/web/index.php/controller/get_all_data",
                     type: "post",
                     dataType: "json",
                     data: {},
@@ -803,11 +797,14 @@ function get_msg(){
                             data.forEach(function(arr) {
                           //dap
                                 if(arr['dap_partid'] == "HEDCOR" && arr['dap_resoid']=="1SLANGN_G01" ) {
-                                $("#hedcor_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#hedcor_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#hedcor_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#hedcor_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -817,6 +814,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null && sr!=null){
                                 $("#hedcor2_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#hedcor2_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -826,6 +826,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#hedcor3_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#hedcor3_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -835,6 +838,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#hedcor4_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#hedcor4_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -844,6 +850,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#hedcor5_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#hedcor5_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -852,11 +861,14 @@ function get_msg(){
                                 
 
                                 if(arr['dap_partid'] == "APRI" && arr['dap_resoid']=="3MKBN_A" ) {
-                                $("#apri_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#apri_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbna_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbna_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -867,6 +879,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbnb_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbnb_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -876,6 +891,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbnc_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbnc_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -885,6 +903,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbnd_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbnd_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -894,6 +915,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbne_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbne_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -903,6 +927,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#mkbno_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#mkbno_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -912,6 +939,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#tiwia_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#tiwia_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -921,16 +951,22 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#tiwic_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#tiwic_"+i).html("-");
+                                }
                             }
                                 
                                 }
                                 }
                                 if(arr['dap_partid'] == "TLI" && arr['dap_resoid']=="3PAGBIL_G01" ) {
-                                $("#tli_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#tli_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
-                                sr= arr['dap_sr_' + pad(i, 2)];      
+                                sr= arr['dap_sr_' + pad(i, 2)];   
                                     if(sr>=0&&sr!=null){
                                 $("#tlig01_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("tlig01_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -940,6 +976,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#tlig02_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#tlig02_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -949,6 +988,9 @@ function get_msg(){
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#tlig03_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#tlig03_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -972,11 +1014,14 @@ function get_msg(){
                             //     }
                             //     }
                                 if(arr['dap_partid'] == "TMO" && arr['dap_resoid']=="2TMO_PB" ) {
-                                $("#tmo_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#tmo_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#tmopb_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#tmopb_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -991,21 +1036,27 @@ function get_msg(){
                             //     }
                             //     }
                                 if(arr['dap_partid'] == "EAUC") {
-                                $("#eauc_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#eauc_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#eaucg01_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#eaucg01_"+i).html("-");
+                                }
                             }
                                 
                                 }
                                 }
                                 if(arr['dap_partid'] == "CPPC") {
-                                $("#cppc_time").html(arr['dap_sr_ddown'].substr(-9));
+                                $("#cppc_time").html("<b style='font-size:10px;'>"+arr['dap_sr_ddown'].substr(11,5));
                                 for(var i = 1; i <= 24; ++i) {      
                                 sr= arr['dap_sr_' + pad(i, 2)];      
                                     if(sr>=0&&sr!=null){
                                 $("#cppcg01_"+i).html(trueRound(sr,2));
+                                if(sr==0){
+                                    $("#cppcg01_"+i).html("-");
+                                }
                             }
                                 
                                 }
@@ -1015,46 +1066,45 @@ function get_msg(){
                                 for(var i = 1; i <= 24; ++i) {      
                                     rtd= arr['rtd_mw_' + pad(i, 2)];          
                                     if( rtd>=0 && rtd !=null){ 
-                                    $("#hedcor_"+i).html( "<b>"+trueRound(rtd,2));
-                                    $("#hedcor_0").html( "<B style='font-size:15px;color:WHITE';' >"+trueRound(rtd,2));
+                                    $("#hedcor_"+i).html( "<b style='color:BLUE';>"+trueRound(rtd,2));
+                                    $("#hedcor_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                              }
                                           rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                              if(rtd!=rtdm&&i>1&&rtd!=null){
-                                                    document.getElementById('hedcor_' + i).parentNode.style.backgroundColor = '#F44335';
-                                                    document.getElementById('hedcor_' + i).style.color = '#FFFFFF';
-                                                    $("#hedcor_0").html( "<B style='font-size:15px;color:WHITE;' class='blink' >"+trueRound(rtd,2));
-
-                                  }
+                                                document.getElementById('hedcor_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#hedcor_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#hedcor_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                       }
                                 }
                             }
                                     if(arr['amp_partid'] == "HEDCORHE"&& arr['amp_resoid']=='1NMHC_G01') {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];          
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#hedcor2_"+i).html( "<b>"+trueRound(rtd,2));
-                                        $("#hedcor2_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#hedcor2_"+i).html( "<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#hedcor2_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                         rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('hedcor2_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('hedcor2_' + i).style.color = '#FFFFFF';
-                                            $("#hedcor2_0").html( "<B style='font-size:15px;color:WHITE'class='blink'>"+trueRound(rtd,2));
-                                        }
+                                            document.getElementById('hedcor2_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#hedcor2_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#hedcor2_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                       }
                                     }
                                     }
                                     if(arr['amp_partid'] == "HEDCOR"&& arr['amp_resoid']=='1NMHC_G03') {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];          
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#hedcor3_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#hedcor3_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#hedcor3_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#hedcor3_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                         rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('hedcor3_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('hedcor3_' + i).style.color = '#FFFFFF';
-                                            $("#hedcor3_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('hedcor3_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#hedcor3_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#hedcor3_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                       
                                         }
                                     }
                                     }
@@ -1062,15 +1112,15 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];          
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#hedcor4_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#hedcor4_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#hedcor4_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#hedcor4_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                         rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('hedcor4_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('hedcor4_' + i).style.color = '#FFFFFF';
-                                            $("#hedcor4_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('hedcor4_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#hedcor4_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#hedcor4_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                       
                                         }
                                     }
                                     }
@@ -1078,15 +1128,14 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];          
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#hedcor5_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#hedcor5_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#hedcor5_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#hedcor5_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                         rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('hedcor5_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('hedcor5_' + i).style.color = '#FFFFFF';
-                                            $("#hedcor5_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('hedcor5_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#hedcor5"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#hedcor5_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
                                         }
                                     }
                                     }
@@ -1094,31 +1143,32 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbna_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbna_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbna_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbna_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn0=rtd;      
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbna_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                            document.getElementById('mkbna_' + i).parentNode.style.backgroundColor = '#F44335';
                                             document.getElementById('mkbna_' + i).style.color = '#FFFFFF';
-                                            $("#mkbna_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
-                                        }
+                                            $("#mkbna_0").html( "<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                                                      }
                                     }
                                     }
                                     if(arr['amp_partid'] == "APRI" && arr['amp_resoid']=="3MKBN_B" ) {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbnb_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbnb_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbnb_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbnb_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn1=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbnb_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('mkbnb_' + i).style.color = '#FFFFFF';
-                                            $("#mkbnb_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('mkbnb_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#mkbnb_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#mkbnb_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
                                         }
                                     }
                                     }
@@ -1126,15 +1176,16 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbnc_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbnc_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbnc_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbnc_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn2=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbnc_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('mkbnc_' + i).style.color = '#FFFFFF';
-                                            $("#mkbnc_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('mkbnc_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#mkbnc_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#mkbnc_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
                                         }
                                     }
                                     }
@@ -1142,15 +1193,16 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbnd_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbnd_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbnd_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbnd_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn3=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbnd_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('mkbnd_' + i).style.color = '#FFFFFF';
-                                            $("#mkbnd_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('mkbnd_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#mkbnd_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#mkbnd_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
                                         }
                                     }
                                     }
@@ -1158,15 +1210,16 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbne_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbne_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbne_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbne_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn4=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbne_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('mkbne_' + i).style.color = '#FFFFFF';
-                                            $("#mkbne_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
-
+                                            document.getElementById('mkbne_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#mkbne_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#mkbne_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
                                         }
                                     }
                                     }
@@ -1174,14 +1227,17 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#mkbno_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#mkbno_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#mkbno_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#mkbno_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_mkbn5=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('mkbno_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('mkbno_' + i).style.color = '#FFFFFF';
-                                            $("#mkbno_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            document.getElementById('mkbno_' + i).parentNode.style.backgroundColor = '#F44335';
+                                            console.log(rtd);
+                                             $("#mkbno_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                             $("#mkbno_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1190,14 +1246,16 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tiwia_"+i).html("<b>"+ trueRound(rtd,2));
-                                        $("#tiwia_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tiwia_"+i).html("<b style='color:BLUE';>"+ trueRound(rtd,2));
+                                        $("#tiwia_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_tiwia=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tiwia_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tiwia_' + i).style.color = '#FFFFFF';
-                                            $("#tiwia_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            document.getElementById('tiwia_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#tiwia_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                           //  $("#tiwia_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1206,30 +1264,35 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tiwic_"+i).html("<b>"+ trueRound(rtd,2));
-                                        $("#tiwic_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tiwic_"+i).html("<b style='color:BLUE';>"+ trueRound(rtd,2));
+                                        $("#tiwic_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        apri_tiwic=rtd;
+
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tiwic_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tiwic_' + i).style.color = '#FFFFFF';
-                                            $("#tiwic_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            document.getElementById('tiwic_' + i).parentNode.style.backgroundColor = '#F44335';
+                                             $("#tiwic_"+i).html("<b style='color:WHITE';>"+trueRound(rtd,2)); 
+                                          //   $("#tiwic_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
                                     }
+                                    //apri total value
+                                    apri_total=parseInt(apri_mkbn0,10)+parseInt(apri_mkbn1,10)+parseInt(apri_mkbn2,10)+parseInt(apri_mkbn3,10)+parseInt(apri_mkbn4,10)+parseInt(apri_mkbn5,10)+parseInt(apri_tiwia,10)+parseInt(apri_tiwic,10);
+                                    $("#apri_data").html("APRI:&nbsp"+trueRound(apri_total,2)+"MW");
                                     if(arr['amp_partid'] == "TLI" && arr['amp_resoid']=="3PAGBIL_G01" ) {
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tlig01_"+i).html( "<b>"+trueRound(rtd,2));
-                                        $("#tlig01_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tlig01_"+i).html( "<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#tlig01_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        tli_g01=rtd;
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
-                                        if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tlig01_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tlig01_' + i).style.color = '#FFFFFF';
-                                            $("#tlig01_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                        if(rtd!=rtdm&&i>1&&rtd!=null){ 
+                                            $("#tlig01_"+i).html( "<b style='color:#F44335';>"+trueRound(rtd,2));
+                                     //       $("#tlig01_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1238,14 +1301,14 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tlig02_"+i).html( "<b>"+trueRound(rtd,2));
-                                        $("#tlig02_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tlig02_"+i).html( "<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#tlig02_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        tli_g02=rtd;
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tlig02_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tlig02_' + i).style.color = '#FFFFFF';
-                                            $("#tlig02_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            $("#tlig02_"+i).html( "<b style='color:#F44335';>"+trueRound(rtd,2)); 
+                                            //$("#tlig02_0").html( "&nbsp<B style='font-size:25px;'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1254,30 +1317,32 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tlig03_"+i).html( "<b>"+ trueRound(rtd,2));
-                                        $("#tlig03_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tlig03_"+i).html( "<b style='color:BLUE';>"+ trueRound(rtd,2));
+                                        $("#tlig03_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
+                                        tli_g03=rtd;
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tlig03_' + i).parentNode.style.backgroundColor = '#FF0000';
-                                            document.getElementById('tlig03_' + i).style.color = '#FFFFFF';
-                                            $("#tlig03_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            $("#tlig03_"+i).html( "<b style='color:#F44335';>"+ trueRound(rtd,2));
+                                        //    $("#tlig03_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
                                     }
+                                    tli_total=parseInt(tli_g01,10)+parseInt(tli_g02,10)+parseInt(tli_g03,10);
+                                    $("#tli_data").html("<B>TLI:&nbsp"+trueRound(tli_total,2)+"MW");
                                     // if(arr['amp_partid'] == "TMO" && arr['amp_resoid']=="2TMO_G01" ) {
                                     // for(var i = 1; i <= 24; ++i) {      
                                     //     rtd= arr['rtd_mw_' + pad(i, 2)];      
                                     //     if( rtd>=0 && rtd !=null){ 
                                     //     $("#tmom3_"+i).html("<b>"+ trueRound(rtd,2));
-                                    //     $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    //     $("#tmom3_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     // }
                                     // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                     //     if(rtd!=rtdm&&i>1&&rtd!=null){
-                                    //         document.getElementById('tmom3_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom3_' + i).parentNode.style.backgroundColor = '#F44335';
                                     //         document.getElementById('tmom3_' + i).style.color = '#FFFFFF';
-                                    //         $("#tmom3_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    //         $("#tmom3_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                     //     }
                                     // }
@@ -1287,13 +1352,13 @@ function get_msg(){
                                     //     rtd= arr['rtd_mw_' + pad(i, 2)];      
                                     //     if( rtd>=0 && rtd !=null){ 
                                     //     $("#tmom4_"+i).html("<b>"+ trueRound(rtd,2));
-                                    //     $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    //     $("#tmom4_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     // }
                                     // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                     //     if(rtd!=rtdm&&i>1&&rtd!=null){
-                                    //         document.getElementById('tmom4_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom4_' + i).parentNode.style.backgroundColor = '#F44335';
                                     //         document.getElementById('tmom4_' + i).style.color = '#FFFFFF';
-                                    //         $("#tmom4_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    //         $("#tmom4_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                     //     }
                                     // }
@@ -1302,14 +1367,14 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#tmopb_"+i).html( "<b>"+trueRound(rtd,2));
-                                        $("#tmopb_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#tmopb_"+i).html( "<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#tmopb_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('tmopb_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                            document.getElementById('tmopb_' + i).parentNode.style.fontColor = '#F44335';
                                             document.getElementById('tmopb_' + i).style.color = '#FFFFFF';
-                                            $("#tmopb_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            $("#tmopb_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1319,13 +1384,13 @@ function get_msg(){
                                     //     rtd= arr['rtd_mw_' + pad(i, 2)];      
                                     //     if( rtd>=0 && rtd !=null){ 
                                     //     $("#tmom6_"+i).html("<b>"+ trueRound(rtd,2));
-                                    //     $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                    //     $("#tmom6_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     // }
                                     // rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                     //     if(rtd!=rtdm&&i>1&&rtd!=null){
-                                    //         document.getElementById('tmom6_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                    //         document.getElementById('tmom6_' + i).parentNode.style.backgroundColor = '#F44335';
                                     //         document.getElementById('tmom6_' + i).style.color = '#FFFFFF';
-                                    //         $("#tmom6_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                    //         $("#tmom6_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                     //     }
                                     // }
@@ -1334,14 +1399,14 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#eaucg01_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#eaucg01_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#eaucg01_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#eaucg01_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('eaucg01_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                            document.getElementById('eaucg01_' + i).parentNode.style.backgroundColor = '#F44335';
                                             document.getElementById('eaucg01_' + i).style.color = '#FFFFFF';
-                                            $("#eaucg01_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            $("#eaucg01_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
@@ -1350,14 +1415,14 @@ function get_msg(){
                                     for(var i = 1; i <= 24; ++i) {      
                                         rtd= arr['rtd_mw_' + pad(i, 2)];      
                                         if( rtd>=0 && rtd !=null){ 
-                                        $("#cppcg01_"+i).html("<b>"+trueRound(rtd,2));
-                                        $("#cppcg01_0").html( "<B style='font-size:15px;color:WHITE;'>"+trueRound(rtd,2));
+                                        $("#cppcg01_"+i).html("<b style='color:BLUE';>"+trueRound(rtd,2));
+                                        $("#cppcg01_0").html( "&nbsp<B style='font-size:25px;color:#263238;'>"+trueRound(rtd,2)+"&nbsp");
                                     }
                                     rtdm=arr['rtd_mw_' + pad(i-1, 2)]; 
                                         if(rtd!=rtdm&&i>1&&rtd!=null){
-                                            document.getElementById('cppcg01_' + i).parentNode.style.backgroundColor = '#FF0000';
+                                            document.getElementById('cppcg01_' + i).parentNode.style.backgroundColor = '#F44335';
                                             document.getElementById('cppcg01_' + i).style.color = '#FFFFFF';
-                                            $("#cppcg01_0").html( "<B style='font-size:15px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
+                                            $("#cppcg01_0").html( "&nbsp<B style='font-size:25px;color:WHITE;'class='blink'>"+trueRound(rtd,2));
 
                                         }
                                     }
